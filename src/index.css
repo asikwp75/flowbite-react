@@ -1,9 +1,42 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-/* #root {
-    max-width: 1280px;
-    margin: 0 auto;
-    padding: 2rem;
-    text-align: center;
-  } */
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+body {
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.hero-email input {
+  border: 0;
+  border-radius: 0;
+  height: 48px;
+}
+
+.tabs-wrap > div {
+  box-shadow: none;
+}
+.tabs-wrap > button {
+  display: flex;
+  flex-direction: column;
+  border: 0;
+  outline: none;
+  gap: 20px;
+  padding: 40px 30px;
+  border-radius: 6px;
+  font-size: 20px;
+  font-weight: 500;
+}
+.tabs-wrap > button:focus,
+.tabs-wrap > button.active {
+  box-shadow: none;
+  background-color: black;
+  color: #fff;
+}
+.tabs-wrap > button svg {
+  width: 35px;
+  height: 35px;
+}
+
+.testimonials .swiper-pagination {
+  width: auto !important;
+}
